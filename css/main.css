@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.main-section{
+    background-color: #1C1D25;
+    overflow:hidden;
+    height: 100vh;
+}
+
+a{
+    color: white!important;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+a {
+    outline: none;
+}
+
+.navbar-toggler{
+    border: none!important;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar ul li {
+    font-size: 16px;
+}
+
+.navbar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.5s;
+}
+
+.navbar ul li .underline {
+    height: 3px;
+    background-color: transparent;
+    width: 0%;
+    transition: width 0.2s, background-color 0.5s;
+    margin: 0 auto;
+}
+
+.navbar ul li.active-link .underline {
+    width: 100%;
+    background-color: white;
+}
+
+.navbar ul li:hover .underline {
+    background-color: white;
+    width: 100%;
+}
+
+.navbar ul li:hover a {
+}
+
+.navbar ul li:active a {
+    transition: none;
+    color: rgba(255,255,255,0.76);
+}
+
+.navbar ul li:active .underline {
+    transition: none;
+    background-color: rgba(255,255,255,0.76);
+}
+
+
+#Titulo{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 6em;
+    color: #FFFFFF;
+}
+
+#subTi{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 61px;
+    color: white;
+}
+
+.MainText{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.Botona{
+    display: inline-table;
+    margin-right: auto;
+    padding: 5px;
+    background: linear-gradient(90deg, rgba(255, 102, 99, 0.99) 0%, rgba(255, 5, 0, 0.99) 100%);
+}
+
+
+#coffee{
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    transform: rotate(1.08deg);
+}
+
+
+#arrow{
+    position: relative;
+    height: 5vh;
+    top:20%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: 1s arrow ease-in infinite;
+}
+
+@keyframes arrow {
+    0%{
+        top:20%;
+    }
+    50%{
+        top:22%;
+    }
+    100%{
+        top:20%;
+    }
+}
+
+
+.colLogo{
+    margin-top: auto;
+}
+
+
+@media (max-width: 992px) {
+
+    .Botona {
+    margin: auto;
+    }
+}
+
+
+@media (max-width: 1674px) {
+
+    #Titulo{
+        font-size: 4em;
+
+    }
+}
