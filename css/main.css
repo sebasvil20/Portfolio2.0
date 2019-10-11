@@ -137,6 +137,17 @@ a {
     }
 }
 
+@-webkit-keyframes arrow {
+    0%{
+        top:20%;
+    }
+    50%{
+        top:22%;
+    }
+    100%{
+        top:20%;
+    }
+}
 
 .colLogo{
     margin-top: auto;
